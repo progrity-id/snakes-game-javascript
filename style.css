@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans' sans-serif ;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(22, 22, 31);
+}
+
+.wrapper {
+    text-align: center;
+    color: white;
+    width: 90vmin;
+    height: 95vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgb(25, 29, 92);
+    border: 3px solid white;
+}
+
+h1 {
+    margin-top: 8px;
+}
+
+.game-details {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 20px 30px;
+    font-size: 20px;
+}
+
+.play-board {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    background: rgb(20, 187, 20);
+    border: 1px solid white;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+
+.play-board .food {
+    background: red;
+    border-radius: 100%;
+}
+
+.play-board .head {
+    background: yellow;
+    border-radius: 40%;
+}
+
+.controls {
+    display: none;
+    justify-content: space-between;
+}
+
+.controls i {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    width: calc(100% / 4);
+    cursor: pointer;
+    border-right: 1px solid black;
+}
+
+#resetHighScoreButton {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#resetHighScoreButton:hover {
+    background-color: rgb(196, 196, 113);
+}
+
+#startButton{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    display: block;
+    font-size: 15px;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#startButton:hover {
+    background-color: rgb(50, 156, 50);
+}
+
+#customButton {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#customButton:hover {
+    background-color: rgb(196, 196, 113);
+}
+
+#isiKustom label {
+    color: white;
+    margin-top: 5px;
+    display: block;
+}
+
+#isiKustom input {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+#isiKustom input[type="text"] {
+    text-align: center;
+    width: 200px;
+}
+
+.level-button {
+    background-color: red;
+    color: white;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.level-button:hover {
+    background-color: rgb(182, 64, 64);
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        width: 90vmin;
+        height: 115vmin;
+    }
+
+    .game-details {
+        font-size: 1rem;
+        padding: 15px 27px;
+    }
+
+    .controls {
+        display: flex;
+    }
+
+    .controls i {
+        padding: 10px 0;
+        font-size: 1rem;
+    }
+}

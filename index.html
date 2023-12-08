@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>SNAKE GAME | BY DIMAS</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>SNAKE GAME</h1>
+        <div class="game-details">
+            <span class="score">Score: 0</span>
+            <span class="high-score">High Score: 0</span>
+            <button id="resetHighScoreButton">RESET</button>
+            <button id="customButton">SETTING</button>
+        </div>
+        <div>
+            <button id="startButton">MULAI</button>
+            <div id="isiKustom" hidden>
+                <label for="input1">ATAS :</label>
+                <input type="text" id="input1">
+                <label for="input2">BAWAH :</label>
+                <input type="text" id="input2">
+                <label for="input3">KIRI :</label>
+                <input type="text" id="input3">
+                <label for="input4">KANAN :</label>
+                <input type="text" id="input4">
+            </div>
+        <div id="levelButton">
+            <button class="level-button" data-level="1">Amatir</button>
+            <button class="level-button" data-level="2">Easy</button>
+            <button class="level-button" data-level="3">Medium</button>
+            <button class="level-button" data-level="4">Hard</button>
+            <button class="level-button" data-level="5">Imposible</button>
+        </div>
+        </div>
+        <div class="play-board"></div>
+        <div class="controls">
+            <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
+            <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
+            <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
+            <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</body>
+</html>
